@@ -11,19 +11,19 @@
 // indexOf : Cherche la position d'un element dans une chaine de caractére (si l'élément n'est pas trouve il retourn -1)
 // document.writeln()
 
-let phrase = 'pate';
-let position = phrase.indexOf("e");
-document.writeln('<span>' + position + '</span>');
+// let phrase = 'pate';
+// let position = phrase.indexOf("e");
+// document.writeln('<span>' + position + '</span>');
 
 // includes() : vérifie si une chaine de caractére contient un élément (retourne true ou false)
 
-let email = prompt('Quel est votre email ?');
+// let email = prompt('Quel est votre email ?');
 
-if(email.includes('@')) {
-  alert('Email valide');
-} else {
-  alert('Email invalide');
-}
+// if(email.includes('@')) {
+//   alert('Email valide');
+// } else {
+//   alert('Email invalide');
+// }
 
 // toLowerCase(), toUpperCase() minuscule et majuscule
 
@@ -61,7 +61,7 @@ function byeBye(){
 // La spécificité ici, c'est que vu qu'il y'a un return, il nous retourne une valeur qu'on doit stocker
 
 let ciao = byeBye();
-console.log(ciao);
+document.writeln(ciao);
 
 // 4: Function avec paramétre avec valeur de retour
 
@@ -72,3 +72,15 @@ function addition(num1, num2){
 let addition1 = addition(4, 10);
 document.writeln(addition1);
 
+// Function avec prompt
+
+function meteo(saison, temperature){
+  let message = `Nous sommes en ${saison} et il fait actuellement ${temperature} degrès`;
+
+  document.writeln(`<p> ${message} </p>`);
+}
+
+let saison = prompt("Donne moi une saison :");
+let temperature = prompt("Donne moi une temperature");
+
+meteo(saison, temperature);
